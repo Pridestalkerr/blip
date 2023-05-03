@@ -1,13 +1,11 @@
 name: CI
 on:
-  push:
-    branches-ignore:
-      - main
-      - staging
   pull_request:
-    branches-ignore:
+    branches:
       - main
-      - staging
+  push:
+    branches:
+      - main
 
 jobs:
   lint:
